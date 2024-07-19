@@ -1,0 +1,42 @@
+<form method="POST" action="{% url 'register_page2' %}">
+    {% csrf_token %}
+    <label for="branch">Branch:</label>
+    <select name="branch" id="branch">
+        <option value="IT">IT</option>
+        <option value="Marketing">Marketing</option>
+        <!-- Add more options as needed -->
+    </select><br>
+
+    <label for="job_title">Job Title:</label>
+    <select name="job_title" id="job_title">
+        <option value="Project Manager">Project Manager</option>
+        <option value="Developer">Developer</option>
+        <!-- Add more options as needed -->
+    </select><br>
+
+    <label for="experience">Experience:</label>
+    <select name="experience" id="experience">
+        <option value="1 Year">1 Year</option>
+        <option value="3 Years">3 Years</option>
+        <!-- Add more options as needed -->
+    </select><br>
+
+    <label for="satisfaction">Satisfaction:</label>
+    <select name="satisfaction" id="satisfaction">
+        <option value="Very Satisfied">Very Satisfied</option>
+        <option value="Satisfied">Satisfied</option>
+        <!-- Add more options as needed -->
+    </select><br>
+
+    <label for="education">Education:</label>
+    <select name="education" id="education">
+        <option value="High School">High School</option>
+        <option value="University">University</option>
+        <!-- Add more options as needed -->
+    </select><br>
+
+    <label for="skills">Skills:</label>
+    <textarea name="skills" id="skills" rows="4" cols="50"></textarea><br>
+
+    <input type="submit" value="Submit">
+</form>

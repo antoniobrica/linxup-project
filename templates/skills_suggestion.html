@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Vorgeschlagene Fähigkeiten</title>
+</head>
+<body>
+    <h1>Vorgeschlagene Fähigkeiten</h1>
+    <ul>
+        {% for skill in skills %}
+            <li>{{ skill }}</li>
+        {% endfor %}
+    </ul>
+    <form method="post" action="{% url 'success' %}">
+        {% csrf_token %}
+        <button type="submit">Bestätigen</button>
+    </form>
+</body>
+</html>

@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Page 2</title>
+</head>
+<body>
+    <h1>Page 2</h1>
+    <form method="POST" action="{% url 'register_page2' %}">
+        {% csrf_token %}
+        <label for="branch">Branch:</label>
+        <input type="text" name="branch" id="branch" value="{{ branch }}" readonly><br>
+
+        <label for="job_title">Job Title:</label>
+        <input type="text" name="job_title" id="job_title" value="{{ job_title }}" readonly><br>
+
+        <label for="experience">Experience:</label>
+        <input type="text" name="experience" id="experience" value="{{ experience }}" readonly><br>
+
+        <label for="satisfaction">Satisfaction:</label>
+        <input type="text" name="satisfaction" id="satisfaction" value="{{ satisfaction }}" readonly><br>
+
+        <label for="education">Education:</label>
+        <input type="text" name="education" id="education" value="{{ education }}" readonly><br>
+
+        <label for="skills">Skills:</label>
+        <textarea name="skills" id="skills" rows="4" cols="50">{{ skills }}</textarea><br>
+
+        <input type="submit" value="Submit">
+    </form>
+</body>
+</html>

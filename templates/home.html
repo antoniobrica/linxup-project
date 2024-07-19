@@ -1,0 +1,13 @@
+{% extends 'base.html' %}
+{% block title %}Welcome to Linxup.ch{% endblock %}
+{% block content %}
+<div class="text-center my-5">
+    <h1>Welcome to Linxup.ch</h1>
+    <p>Unsere Plattform verbindet qualifizierte Fachkräfte mit innovativen Unternehmen und gestaltet so die Zukunft aktiv mit.</p>
+    <div class="mt-4">
+        <a href="/register/page1/" class="btn btn-primary">Als Talent anmelden</a>
+        <a href="#" class="btn btn-primary">Für Arbeitgeber</a>
+    </div>
+</div>
+<img src="{% static 'images/team.jpg' %}" class="img-fluid" alt="Team">
+{% endblock %}
